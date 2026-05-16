@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "reanime.py",
+      "src": "main.py",
       "use": "@vercel/python"
     },
     {
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "reanime.py"
+      "dest": "main.py"
     }
   ]
 }
