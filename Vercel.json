@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "reanime.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "decrypt.mjs",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "reanime.py"
+    }
+  ]
+}
